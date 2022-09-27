@@ -61,6 +61,16 @@ let roundResult = document.querySelector(".outcome");
 
 let end = document.querySelector(".end");
 
+let refresh = document.querySelector(".refresh");
+let playAgain = document.createElement("button");
+playAgain.classList.add('playAgain');
+playAgain.textContent = "Play Again";
+playAgain.addEventListener("click", function(){
+    window.location.reload();
+});
+
+
+
 
 
 let playerScore = 0;
@@ -102,6 +112,9 @@ let game = (pc) => {
         }
 
         end.textContent = gameOutcome;
+
+        refresh.appendChild(playAgain);
+
     }
         
 
@@ -110,6 +123,7 @@ let game = (pc) => {
 
 
 }
+
 
 
 document.getElementById("rock").addEventListener("click", function(){
@@ -123,5 +137,9 @@ document.getElementById("scissors").addEventListener("click", function(){
     game('scissors');
 });
 
+
+document.getElementsByClassName("playAgain").addEventListener("click", function(){
+    window.location.reload();
+});
 
 

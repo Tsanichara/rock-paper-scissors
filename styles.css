@@ -1,0 +1,68 @@
+body{
+    background-color: aquamarine;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    font-size: 50px;
+}
+
+.sub{
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 30px;
+}
+
+.btn{
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    background-color:   blue;
+    color: white;
+}
+
+#rock, #paper, #scissors{
+    font-size: 25px;
+    border-radius: 8px;
+    height: 200px;
+    width: 250px;
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.titleResult{
+    text-align: center;
+}
+
+.refresh{
+    display: flex;
+    justify-content: center;
+}
+
+.refresh button{
+    height: 100px;
+    width: 100px;
+}

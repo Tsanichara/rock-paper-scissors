@@ -65,6 +65,10 @@ let refresh = document.querySelector(".refresh");
 let playAgain = document.createElement("button");
 playAgain.classList.add('playAgain');
 playAgain.textContent = "Play Again";
+playAgain.style.width = "300px";
+playAgain.style.fontSize = "25px";
+
+
 playAgain.addEventListener("click", function(){
     window.location.reload();
 });
